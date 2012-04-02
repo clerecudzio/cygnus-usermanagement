@@ -3,7 +3,6 @@ import org.codehaus.groovy.grails.plugins.springsecurity.*
 import com.cygnus.sys.umgt.RequestMap
 import grails.plugins.springsecurity.*
 
-
 class CygnusUsermanagementGrailsPlugin {
     // the plugin version
     def version = "0.1"
@@ -50,7 +49,7 @@ class CygnusUsermanagementGrailsPlugin {
 
     def doWithSpring = {
         // TODO Implement runtime spring config (optional)
-		
+	
 	
 		
     }
