@@ -3,7 +3,7 @@ package com.cygnus.sys.umgt
 import org.springframework.dao.DataIntegrityViolationException
 
 class PersonAuthoritiesController {
-
+	def universalSearchService
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
@@ -100,4 +100,12 @@ class PersonAuthoritiesController {
             redirect(action: "show", id: params.id)
         }
     }
+	
+	def cygnusFilteredSearch(){
+		params.max = Math.min(params.max ? params.int('max') : 10, 100)
+		
+		log.info "params = "+params.toString();
+		def result = universalSearchService.generateResult(params)
+		render (view:"list",model: [personAuthoritiesInstanceList: result.resultList, personAuthoritiesInstanceTotal: result.resultListSize])
+	}
 }
