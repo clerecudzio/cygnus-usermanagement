@@ -28,7 +28,7 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<g:formRemote name="cygnuspersonEditForm" update="pageContent" url="[controller:'person', action:'save']" method="post" >
+			<g:formRemote name="cygnuspersonEditForm" update="pageContent" url="[controller:'person', action:'update']" method="post" >
 				<g:hiddenField name="id" value="${personInstance?.id}" />
 				<g:hiddenField name="version" value="${personInstance?.version}" />
 				<fieldset class="form">
