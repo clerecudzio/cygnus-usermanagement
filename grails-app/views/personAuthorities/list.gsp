@@ -47,10 +47,10 @@
 			
 			<div class="pagination">
 			<g:if test="${params.action == 'list' }">
-				<g:paginate total="personAuthoritiesInstanceTotal}" />
+				<g:paginate total="{personAuthoritiesInstanceTotal}" />
 			</g:if>
 			<g:else>
-				<g:paginate total="personAuthoritiesInstanceTotal}"
+				<g:paginate total="{personAuthoritiesInstanceTotal}"
 					action="cygnusFilteredSearch"
 					params="${params}"
 					max="${params.max}"/>
