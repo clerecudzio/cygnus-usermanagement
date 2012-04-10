@@ -6,6 +6,7 @@
 		<meta name="layout" content="cygnus-forms">
 		<g:set var="entityName" value="${message(code: 'requestMap.label', default: 'RequestMap')}" />
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
+		<parameter name="pageEName" value="requestMap" />
 	</head>
 	<body>
 		<a href="#create-requestMap" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>

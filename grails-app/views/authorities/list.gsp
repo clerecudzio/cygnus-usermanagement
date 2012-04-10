@@ -7,6 +7,7 @@
 		<meta name="layout" content="cygnus-forms">
 		<g:set var="entityName" value="${message(code: 'authorities.label', default: 'Authorities')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
+		<parameter name="pageEName" value="authorities" />
 	</head>
 	<body>
 		<a href="#list-authorities" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
